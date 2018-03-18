@@ -40,18 +40,18 @@ var totalBees = 55;
 
 function preload() {
   //Assets
-  images.bee = loadImage("data/bee.png");
-  images.flag = loadImage("data/flag.png");
+  images.bee = loadImage("./data/bee.png");
+  images.flag = loadImage("./data/flag.png");
 
-  sounds.click = loadSound("data/click.mp3");
-  sounds.flag = loadSound("data/flag.mp3");
-  sounds.expl = loadSound("data/explosion.mp3");
-  sounds.whoosh = loadSound("data/whoosh.mp3");
-  sounds.win = loadSound("data/won.mp3");
+  sounds.click = loadSound("./data/click.mp3");
+  sounds.flag = loadSound("./data/flag.mp3");
+  sounds.expl = loadSound("./data/explosion.mp3");
+  sounds.whoosh = loadSound("./data/whoosh.mp3");
+  sounds.win = loadSound("./data/won.mp3");
 }
 
 function setup() {
-  cursor("data/cursor.png", 16, 16);
+  cursor("./data/cursor.png", 16, 16);
   if (firstSetup) {
     createCanvas(401, 401);
     writeText();
